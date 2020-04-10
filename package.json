@@ -16,7 +16,11 @@
 		"typescript": "~3.8.2"
 	},
 	"scripts": {
+		"start": "npm run ts:watch & npm run server:watch",
+		"server:watch": "nodemon --inspect build/src/server.js",
 		"clean": "rimraf coverage build tmp",
+		"ts": "tsc",
+		"ts:watch": "tsc -w",
 		"build": "tsc -p tsconfig.release.json",
 		"build:watch": "tsc -w -p tsconfig.release.json",
 		"test": "jest --coverage",
@@ -25,6 +29,11 @@
 	"author": "Jakub Synowiec <github@jakubsynowiec.info>",
 	"license": "Apache-2.0",
 	"dependencies": {
+		"@types/express": "^4.17.6",
+		"@types/supertest": "^2.0.8",
+		"express": "^4.17.1",
+		"nodemon": "^2.0.3",
+		"supertest": "^4.0.2",
 		"tslib": "~1.10.0"
 	}
 }

@@ -11,13 +11,19 @@ A Node API built by Cadell in 2020.
 
 ## 💻 Running Locally
 
-Install dependencies.
+Install dependencies first.
 
 ```
 npm install
 ```
 
-Run run tests in watch mode for automatic re-runs.
+Run the server with automatic restarts
+
+```
+npm run start
+```
+
+Run run tests in watch mode for automatic re-runs, probably in another terminal.
 
 ```
 npm run test:watch
