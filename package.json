@@ -1,12 +1,12 @@
 {
 	"name": "node-api-2020",
 	"version": "0.0.1",
-  "description": "A Node API built by Cadell in 2020",
-  "author": "Cadell Christo",
+	"description": "A Node API built by Cadell in 2020",
+	"author": "Cadell Christo",
 	"engines": {
 		"node": ">= 12.13 <13"
-  },
-  "scripts": {
+	},
+	"scripts": {
 		"start": "npm run ts:watch & npm run server:watch",
 		"server:watch": "nodemon --inspect build/src/server.js",
 		"clean": "rimraf coverage build tmp",
@@ -17,11 +17,13 @@
 		"test": "jest --coverage",
 		"test:watch": "jest --watch"
 	},
-  "dependencies": {
+	"dependencies": {
 		"@types/express": "^4.17.6",
+		"@types/pg": "^7.14.3",
 		"@types/supertest": "^2.0.8",
 		"express": "^4.17.1",
 		"nodemon": "^2.0.3",
+		"pg": "^8.0.2",
 		"supertest": "^4.0.2",
 		"tslib": "~1.10.0"
 	},
